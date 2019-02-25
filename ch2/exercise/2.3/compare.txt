@@ -1,0 +1,6 @@
+运行go test -bench=. 得到结果：
+
+BenchmarkPopCount-4             2000000000               0.35 ns/op
+BenchmarkPopCountRewrite-4      100000000               20.0 ns/op
+
+结论：PopCount每次运行0.35ns，PopCountRewrite每次运行20ns，修改前效果更佳
